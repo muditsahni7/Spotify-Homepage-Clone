@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(#1e4427, black);
+
+    font-size: 20px;
+
+    font-family: sans-serif;
+}
+
+.sidebar {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.sidebar .logo img {
+    width: 130px;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.sidebar .navigation ul li {
+    padding: 10px 0;
+}
+
+.sidebar .navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+
+    color: #ffffff;
+}
+
+.sidebar .navigation ul li a span {
+
+    padding-left: 10px;
+}
+
+.sidebar .playlists {
+    position: absolute;
+
+}
+
+.sidebar .playlists ul {
+    list-style: none;
+}
+
+.sidebar .playlists ul li {
+    padding-top: 14px;
+
+    text-decoration: none;
+    font-weight: 500;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+.sidebar .playlists img {
+    margin-left: -40px;
+    margin-top: 10px;
+    width: 260px;
+    height: 300px;
+}
+
+.sidebar .playlists ul li:hover,
+.sidebar .playlists ul li:active,
+.sidebar .playlists ul li:focus {
+    text-decoration: underline;
+}
+
+.afternoon {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.container {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.container .item {
+    flex-basis: 30%;
+
+    height: 50px;
+    margin: 8px;
+
+
+    padding: 30px 0 10px 0;
+    background-color: #181818;
+    border-radius: 6px;
+
+
+}
+
+.container .item img {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 2px;
+    border-radius: 6px 0 0 6px;
+}
+
+.container .item span {
+    margin-left: 22%;
+
+
+}
+
+.container .item:hover {
+    background-color: #636363;
+}
+
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 14px 30px;
+}
+
+.topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    cursor: not-allowed;
+    font-size: 18px;
+    border: 0;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.user-button {
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 9px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.user-button i {
+    margin-right: 8px;
+    color: white;
+}
+
+.user-button:hover {
+    background-color: #636363;
+}
+
+.user-button .fa-user-circle {
+    font-size: 30px;
+
+}
+
+
+
+.user-button .fa-angle-down {
+    margin-left: 8px;
+}
+
+
+.main-container .spotify-playlist {
+    padding: 20px 40px;
+}
+
+.main-container .spotify-playlist h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.main-container .spotify-playlist .list {
+    display: flex;
+    overflow: hidden;
+    gap: 50px;
+
+}
+
+.spotify-playlist span {
+
+    float: right;
+    margin-top: -40px;
+    color: white;
+    font-size: medium;
+}
+
+.spotify-playlist span:hover {
+    color: lightgreen;
+}
+
+.spotify-playlist .list .item {
+    height: 220px;
+    width: 180px;
+    padding: 25px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover {
+    background-color: #636363;
+}
+
+.spotify-playlist .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    height: 80%;
+
+}
+
+
+
+.spotify-playlist .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+
+.spotify-playlist hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+
+.preview {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #181818;
+    padding: 35px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview h4 {
+    color: #ffffff;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+.preview i {
+    position: absolute;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.preview i:hover {
+    opacity: 0.8;
+
+}
+
+.preview p {
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+
+}
+
+.preview .fa-random {
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 40%;
+}
+
+.preview .fa-step-backward {
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 42%;
+}
+
+.preview .fa-pause-circle {
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 43.5%;
+    font-size: 30px;
+
+}
+
+.preview .fa-step-forward {
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 46%;
+}
+
+.preview .fa-redo-alt {
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 47.5%;
+}
+
+.preview .duration-bar {
+    width: 40%;
+    height: 7px;
+    background-color: #636363;
+    margin-top: 30px;
+    border-radius: 6px;
+    margin-right: 32.75%;
+}
+
+.preview .duration-progress {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.preview span {
+    color: white;
+    font-size: medium;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.preview .time1 {
+    margin-left: 24%;
+
+}
+
+.preview .time2 {
+    margin-left: 65%;
+}
+
+.preview .fa-align-justify {
+    position: absolute;
+    margin-left: 83%;
+}
+
+.preview .fa-headphones {
+    position: absolute;
+    margin-left: 84.5%;
+}
+
+.preview .fa-volume-up {
+    position: absolute;
+    margin-left: 86%;
+}
+
+.preview .volume {
+    position: absolute;
+    width: 7%;
+    height: 3%;
+    margin-left: 88%;
+    background-color: #636363;
+    border-radius: 6px;
+    margin-top: 27px;
+}
+
+.preview .fa-expand-alt {
+    position: absolute;
+    margin-left: 95.5%;
+}
+
+.preview i {
+    cursor: pointer;
+}
